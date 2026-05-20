@@ -1,0 +1,293 @@
+css * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  background-color: #ffffff;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+#Hero {
+  background: #f8f9fa;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #777;
+}
+
+#resume {
+  background: #f8f9fa;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.resume-column h4 {
+  margin-bottom: 20px;
+
+  color: #0d6efd;
+}
+
+.resume-column h5 {
+  font-size: 20px;
+}
+
+.resume-column h6 {
+  font-size: 15px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #0d6efd;
+}
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project-card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.project-card {
+  overflow: hidden;
+}
+
+#about {
+  background: #f8f9fa;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  max-width: 800px;
+}
+
+#contact {
+  background: #f8f9fa;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  padding: 10px 18px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.github {
+  background: #111;
+}
+
+.linkedin {
+  background: #0d6efd;
+}
+
+.twitter {
+  background: #17a2b8;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.contact-form .card {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+form button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  .resume-grid,
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+}
